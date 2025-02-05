@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Alata&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Alata&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tienne:wght@400;700;900&display=swap');
+
+
+body {
+    background-color: #09122C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: "Kanit", serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: #872341;
+    margin-bottom: 20px;
+}
+p{
+    color: #0015ff;
+    font-size: 1.2rem;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+#projectsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projectsList li {
+    background-color: #BE3144;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#projectsList li a {
+    color: white;  /* Green text for project name */
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px; /* Add some space between text and download button */
+}
+
+
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FBA518;
+    color: #CCDF92;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: green;
+}
+
+.download-button:active {
+    background-color: #CCDF92;
+}
+
+#logout{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+    background-color: white;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    font-weight: bolder;
+}
+#logout:hover{
+    background-color: red;
+    color: white;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+#projectName{
+    color: rgb(44, 255, 12);
+    padding-bottom: 1rem;
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+#projectsList li:nth-child(even){
+    background-color: #0011c7;;
+}
