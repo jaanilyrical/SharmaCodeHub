@@ -11,7 +11,7 @@ if (localStorage.getItem('loggedIn') !== 'true') {
         'Paragraph Element',
         'Void Elements',
         'Top 3 Web Series',
-        // 'List Elements',
+        'List Elements',
         // 'Nesting and Indentation',
         // 'Anchor Elements',
         // 'Image Elements',
