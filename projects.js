@@ -4,13 +4,55 @@ if (localStorage.getItem('loggedIn') !== 'true') {
 } else {
     // Display projects after login
     const projectsList = document.getElementById('projectsList');
-    const projects = [
-        { name: 'Project 1 <p id="projectName"> Heading Element </p>', file: 'project1.zip' },
-        { name: 'Project 2 <p id="projectName"> Paragraph Element </p>', file: 'project2.zip' },
-        { name: 'Project 3 <p id="projectName"> Void Elements </p>', file: 'project3.zip' },
-        { name: 'Project 4 <p id="projectName"> Top 3 Web Series </p>', file: 'project4.zip' },
-        // Add more projects here as needed
+
+    // Define project names (excluding the "Project X" and "projectX.zip" parts)
+    const projectTitles = [
+        'Heading Element',
+        'Paragraph Element',
+        'Void Elements',
+        'Top 3 Web Series',
+        // 'List Elements',
+        // 'Nesting and Indentation',
+        // 'Anchor Elements',
+        // 'Image Elements',
+        // 'Birthday Invite',
+        // 'File Paths',
+        // 'Webpages',
+        // 'HTML Portfolio',
+        // 'Adding CSS',
+        // 'CSS Selectors',
+        // 'Color Vocab',
+        // 'CSS Colors',
+        // 'Font Properties',
+        // 'CSS Box Model',
+        // 'Motivation Meme',
+        // 'CSS Cascade',
+        // 'CSS Positioning',
+        // 'Flag Project',
+        // 'CSS Display',
+        // 'CSS Float',
+        // 'Responsiveness',
+        // 'Media Query',
+        // 'Web Design Agency',
+        // 'Display Flex',
+        // 'Flex Direction',
+        // 'Flex Box Pricing Table',
+        // 'Display Grid',
+        // 'Grid Sizing',
+        // 'Grid Placement',
+        // 'Mondrian',
+        
+
+        // Add more project titles here as needed
     ];
+
+    // Dynamically create the projects array
+    const projects = projectTitles.map((title, index) => {
+        const projectNumber = index + 1; // Start counting from 1
+        const projectName = `Project ${projectNumber} <p id="projectName">${title}</p>`;
+        const fileName = `./PROJECTS/project${projectNumber}.zip`; // Creates project1.zip, project2.zip, etc.
+        return { name: projectName, file: fileName };
+    });
 
     projects.forEach(project => {
         const li = document.createElement('li');

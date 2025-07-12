@@ -5,11 +5,11 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     const password = document.getElementById('password').value;
 
     // Hardcoded username and password
-    const validUsername = 'Rohit Sharma';
+    const validUsername = 'rohit sharma';
     const validPassword = 'jaani_lyrical';
 
     // Check if username and password match
-    if (username === validUsername && password === validPassword) {
+    if (username.toLowerCase().trim() === validUsername && password.toLowerCase().trim() === validPassword) {
         // Save login status in localStorage
         localStorage.setItem('loggedIn', 'true');
         alert('Login Successful');

@@ -100,6 +100,22 @@ p{
     font-size: 1.3rem;
 }
 
-#projectsList li:nth-child(even){
-    background-color: #0011c7;;
-}
+#projectsList li:nth-child(10n+1) {background-color: #6d5e5eb7;}
+#projectsList li:nth-child(10n+2) {background-color: #0011c7;}
+#projectsList li:nth-child(10n+3) {background-color: #e614a4fd;}
+#projectsList li:nth-child(10n+4) {background-color: #0d5e42;}
+#projectsList li:nth-child(10n+5) {background-color: #ff0606b7;}
+#projectsList li:nth-child(10n+6) {background-color: #2a3888;}
+#projectsList li:nth-child(10n+7) {background-color: #ff00ae78;}
+#projectsList li:nth-child(10n+8) {background-color: #ffbb0063;}
+#projectsList li:nth-child(10n+9) {background-color: #7313e0ee;}
+
+
+
+
+
+
+
+
+
+
